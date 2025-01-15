@@ -5,7 +5,9 @@ public class Logowanie {
 	private BuforLogowania buforLogowania;
 
 	public boolean authorize(String login, String password) {
-		return logAttempt(login, password);
+		BuforLogowania buforLogowania = new BuforLogowania(login, password);
+		Autoryzacja autoryzacja = new Autoryzacja();
+        return autoryzacja.checkpassword(buforLogowania);
 	}
 	private boolean logAttempt(String login, String password) {
 		// Example logic to validate login credentials

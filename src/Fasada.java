@@ -13,7 +13,7 @@ public class Fasada implements Operacje_uzytkownika {
 		if (loginStatus) {
 			BuforDanych buforDanych = new BuforDanych("01010101111", "Adam", "Adamski");
 			OperateData operateData = new OperateData();
-			operateData.modifData(buforDanych);
+			operateData.modifyData(buforDanych);
 		} else {
 			System.out.println("Authorization failed.");
 		}
