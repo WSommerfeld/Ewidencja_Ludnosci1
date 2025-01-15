@@ -1,18 +1,24 @@
 public class Fasada implements Operacje_uzytkownika {
 
+	private boolean loginStatus;
+	private boolean privileged;
+
 	public void uModifyDB(int operationNumber) {
-		// TODO - implement Fasada.uModifyDB
-		throw new UnsupportedOperationException();
+		if (privileged &&loginStatus) {
+			System.out.println("Privileged access");
+			// TODO - implement Fasada.uModifyDB
+		}else {
+			System.out.println("Authorization failed.");
+		}
 	}
 
+	//uzytkownik najpierw musi sie zalogowac a nastepnie wywolywane jest modifyDB
 
 	public void modifyDB(int formNumber) {
-		Logowanie logowanie = new Logowanie();
-		boolean loginStatus = logowanie.authorize("login", "haslo");
-
 		if (loginStatus) {
+			//Tu tak samo, dane na stale w kodzie
 			BuforDanych buforDanych = new BuforDanych("01010101111", "Adam", "Adamski");
-			OperateData operateData = new OperateData();
+			OperateData operateData = new OperateData(formNumber);
 			operateData.modifyData(buforDanych);
 		} else {
 			System.out.println("Authorization failed.");
@@ -20,8 +26,9 @@ public class Fasada implements Operacje_uzytkownika {
 	}
 
 	public void loginAttempt(String login, String password) {
-		// TODO - implement Fasada.loginAttempt
-		throw new UnsupportedOperationException();
+		Logowanie logowanie = new Logowanie();
+		loginStatus= logowanie.authorize(login, password);
+		privileged = logowanie.isPrivileged();
 	}
 
 }

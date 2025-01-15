@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1b8abef-cdfe-4781-bd9f-caf50e6a5fe3" name="Changes" comment="Testowe zmiany">
+    <list default="true" id="e1b8abef-cdfe-4781-bd9f-caf50e6a5fe3" name="Changes" comment="PU2 v.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Autoryzacja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autoryzacja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BuforLogowania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BuforLogowania.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fasada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fasada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FasadaModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FasadaModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FormAktMarriage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormAktMarriage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FormAktUrodzenia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormAktUrodzenia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FormAktZgonu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormAktZgonu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logowanie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OperateData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OperateData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WyborFormularza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WyborFormularza.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1736440804594</updated>
       <workItem from="1736943706217" duration="1868000" />
-      <workItem from="1736974531931" duration="1642000" />
+      <workItem from="1736974531931" duration="3398000" />
     </task>
     <task id="LOCAL-00001" summary="Testowe zmiany">
       <option name="closed" value="true" />
@@ -92,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736943950534</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="PU2 v.1">
+      <option name="closed" value="true" />
+      <created>1736976216833</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736976216833</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +129,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Testowe zmiany" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testowe zmiany" />
+    <MESSAGE value="PU2 v.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="PU2 v.1" />
   </component>
 </project>

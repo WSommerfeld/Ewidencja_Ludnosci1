@@ -1,7 +1,6 @@
 public class OperateData {
 
-	private int operationNumber;
-	private BuforDanych dane;
+	private final int operationNumber;
 
 	public void modifyData(BuforDanych dane) {
 		WyborFormularza wyborFormularza = new WyborFormularza();
@@ -9,4 +8,7 @@ public class OperateData {
 		form.modifyData(dane);
 	}
 
+	public OperateData(int operationNumber) {
+		this.operationNumber = operationNumber;
+	}
 }
