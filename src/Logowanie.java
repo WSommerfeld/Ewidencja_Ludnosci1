@@ -1,18 +1,15 @@
 public class Logowanie {
 
-	private boolean loginstatus;
 	private boolean privileged;
 
 	private BuforLogowania buforLogowania;
 
-	/**
-	 * 
-	 * @param login
-	 * @param password
-	 */
 	public boolean authorize(String login, String password) {
-		// TODO - implement Logowanie.authorize
-		throw new UnsupportedOperationException();
+		return logAttempt(login, password);
+	}
+	private boolean logAttempt(String login, String password) {
+		// Example logic to validate login credentials
+		return "user".equals(login) && "password".equals(password);
 	}
 
 }

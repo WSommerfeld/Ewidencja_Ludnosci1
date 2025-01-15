@@ -1,28 +1,24 @@
 public class Fasada implements Operacje_uzytkownika {
 
-	/**
-	 * 
-	 * @param operationNumber
-	 */
 	public void uModifyDB(int operationNumber) {
 		// TODO - implement Fasada.uModifyDB
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param formNumber
-	 */
+
 	public void modifyDB(int formNumber) {
-		// TODO - implement Fasada.modifyDB
-		throw new UnsupportedOperationException();
+		Logowanie logowanie = new Logowanie();
+		boolean loginStatus = logowanie.authorize("login", "haslo");
+
+		if (loginStatus) {
+			BuforDanych buforDanych = new BuforDanych("01010101111", "Adam", "Adamski");
+			OperateData operateData = new OperateData();
+			operateData.modifData(buforDanych);
+		} else {
+			System.out.println("Authorization failed.");
+		}
 	}
 
-	/**
-	 * 
-	 * @param login
-	 * @param password
-	 */
 	public void loginAttempt(String login, String password) {
 		// TODO - implement Fasada.loginAttempt
 		throw new UnsupportedOperationException();
