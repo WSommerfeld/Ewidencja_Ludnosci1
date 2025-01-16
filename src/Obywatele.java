@@ -3,6 +3,6 @@ import java.util.List;
 public class Obywatele {
 
 	private List<Record> attribute;
-	 List<Record> record;
+	static List<Record> record;
 
 }

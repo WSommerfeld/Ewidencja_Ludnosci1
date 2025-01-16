@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class DaneLogowania {
 
 	/**
@@ -5,8 +7,17 @@ public class DaneLogowania {
 	 * @param login
 	 */
 	public boolean checklogin(String login) {
-		// TODO - implement DaneLogowania.checklogin
-		throw new UnsupportedOperationException();
+
+		boolean exist=false;
+		for(User user: Users.user)
+		{
+			if(user.login==login)
+			{
+				exist=true;
+				break;
+			}
+		}
+		return exist;
 	}
 
 	/**
@@ -15,8 +26,17 @@ public class DaneLogowania {
 	 * @param password
 	 */
 	public boolean logattempt(String login, String password) {
-		// TODO - implement DaneLogowania.logattempt
-		throw new UnsupportedOperationException();
+
+		boolean accepted=false;
+		for(User user: Users.user)
+		{
+			if(Objects.equals(user.login, login) && Objects.equals(user.password, password))
+			{
+				accepted=true;
+				break;
+			}
+		}
+		return accepted;
 	}
 
 	/**
@@ -25,8 +45,17 @@ public class DaneLogowania {
 	 * @param password
 	 */
 	public boolean getprivilege(String login, String password) {
-		// TODO - implement DaneLogowania.getprivilege
-		throw new UnsupportedOperationException();
+
+		boolean privileged=false;
+		for(User user: Users.user)
+		{
+			if(Objects.equals(user.login, login) && Objects.equals(user.password, password))
+			{
+				privileged=user.privileged;
+				break;
+			}
+		}
+		return privileged;
 	}
 
 }

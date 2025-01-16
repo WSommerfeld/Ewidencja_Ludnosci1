@@ -13,11 +13,11 @@ public class Main {
         Record obywatel2 = new Record(777777778, "Piotr", "Kowalski", "20.03.2001",
                 "Wrocław", "Polska", false, 'M', "PL", 0, "brak");
 
-        uzytkownicy.user.add(admin);
-        uzytkownicy.user.add(user1);
+        Users.user.add(admin);
+        Users.user.add(user1);
 
-        obywatele.record.add(obywatel1);
-        obywatele.record.add(obywatel2);
+        Obywatele.record.add(obywatel1);
+        Obywatele.record.add(obywatel2);
 
         Operacje_uzytkownika operacje_uzytkownika=new Fasada();
         operacje_uzytkownika.loginAttempt("login", "password");
