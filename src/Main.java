@@ -19,8 +19,16 @@ public class Main {
         Obywatele.record.add(obywatel1);
         Obywatele.record.add(obywatel2);
 
+        /// Informacje wprowadzane przez użytkownika
+        String login;
+        String password;
+        /// Wprowadzenie danych
+        login="user1";
+        password="password";
+
         Operacje_uzytkownika operacje_uzytkownika=new Fasada();
-        operacje_uzytkownika.loginAttempt("login", "password");
+
+        operacje_uzytkownika.loginAttempt(login, password);
         //TODO-dane w zaden sposob nie sa dostarczane do bufora
         operacje_uzytkownika.modifyDB(1);
     }

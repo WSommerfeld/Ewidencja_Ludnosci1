@@ -1,15 +1,30 @@
 public class Logowanie {
 
-	private boolean privileged;
+	 static boolean loginstatus;
+	 static boolean privileged;
 
 	public boolean authorize(String login, String password) {
 		BuforLogowania buforLogowania = new BuforLogowania(login, password);
 		Autoryzacja autoryzacja = new Autoryzacja();
-		privileged=autoryzacja.getprivilleged(buforLogowania);
-        return autoryzacja.checkpassword(buforLogowania);
+		boolean exist=autoryzacja.checklogin(buforLogowania);
+		if(exist)
+		{
+			loginstatus=autoryzacja.checkpassword(buforLogowania);
+			if(loginstatus)
+			{
+				privileged=autoryzacja.getprivilleged(buforLogowania);
+			}
+			else {
+				System.out.println("Nieprawidłowe hasło");
+			}
+		}
+		else {
+			System.out.println("Nieprawidłowy login");
+		}
+
+
+        return loginstatus;
 	}
 
-	public boolean isPrivileged() {
-		return privileged;
-	}
+
 }

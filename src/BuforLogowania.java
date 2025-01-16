@@ -1,10 +1,10 @@
 public class BuforLogowania implements Bufor {
 
-	private String login;
-	private String password;
+	 String login;
+	 String password;
 
-	public BuforLogowania(String password, String login) {
-		this.password = password;
+	public BuforLogowania(String login, String password) {
 		this.login = login;
+		this.password = password;
 	}
 }

@@ -18,7 +18,7 @@ public interface Dostep_do_danych {
 	 * @param login
 	 * @param password
 	 */
-	void getprivilege(String login, String password);
+	boolean getprivilege(String login, String password);
 
 	/**
 	 * 

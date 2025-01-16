@@ -13,6 +13,7 @@ public class DaneLogowania {
 		{
 			if(user.login==login)
 			{
+
 				exist=true;
 				break;
 			}
@@ -30,7 +31,7 @@ public class DaneLogowania {
 		boolean accepted=false;
 		for(User user: Users.user)
 		{
-			if(Objects.equals(user.login, login) && Objects.equals(user.password, password))
+			if((user.login== login) && (user.password==password))
 			{
 				accepted=true;
 				break;
@@ -49,7 +50,7 @@ public class DaneLogowania {
 		boolean privileged=false;
 		for(User user: Users.user)
 		{
-			if(Objects.equals(user.login, login) && Objects.equals(user.password, password))
+			if((user.login==login) && (user.password==password))
 			{
 				privileged=user.privileged;
 				break;

@@ -1,18 +1,21 @@
 public class FasadaModel implements Dostep_do_danych {
 
 	public boolean checklogin(String login) {
-		// TODO - implement FasadaModel.check-login
-		throw new UnsupportedOperationException();
+	DaneLogowania dane = new DaneLogowania();
+	boolean exist = dane.checklogin(login);
+	return exist;
 	}
 
 	public boolean logattempt(String login, String password) {
-		// TODO - implement FasadaModel.log-attempt
-		throw new UnsupportedOperationException();
+		DaneLogowania dane = new DaneLogowania();
+		boolean logged = dane.logattempt(login,password);
+		return logged;
 	}
 
-	public void getprivilege(String login, String password) {
-		// TODO - implement FasadaModel.get-privilege
-		throw new UnsupportedOperationException();
+	public boolean getprivilege(String login, String password) {
+		DaneLogowania dane = new DaneLogowania();
+		boolean privileged= dane.getprivilege(login,password);
+		return privileged;
 	}
 
 	public String get(String PESEL, int column) {
