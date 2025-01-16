@@ -26,10 +26,8 @@ public class Main {
         login="user1";
         password="password";
 
-        Operacje_uzytkownika operacje_uzytkownika=new Fasada();
+        FasadaWidok fasadaWidok = new FasadaWidok();
+        fasadaWidok.start();
 
-        operacje_uzytkownika.loginAttempt(login, password);
-        //TODO-dane w zaden sposob nie sa dostarczane do bufora
-        operacje_uzytkownika.modifyDB(1);
     }
 }

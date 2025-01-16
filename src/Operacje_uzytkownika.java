@@ -17,6 +17,7 @@ public interface Operacje_uzytkownika {
 	 * @param login
 	 * @param password
 	 */
-	void loginAttempt(String login, String password);
+	void loginAttempt(String login, String password)
+	;
 
 }

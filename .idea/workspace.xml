@@ -6,16 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e1b8abef-cdfe-4781-bd9f-caf50e6a5fe3" name="Changes" comment="PU2 v.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Autoryzacja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autoryzacja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BuforLogowania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BuforLogowania.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DaneLogowania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DaneLogowania.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dostep_do_danych.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dostep_do_danych.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fasada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fasada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FasadaModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FasadaModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logowanie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FasadaWidok.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FasadaWidok.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Obywatele.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Obywatele.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operacje_uzytkownika.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operacje_uzytkownika.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

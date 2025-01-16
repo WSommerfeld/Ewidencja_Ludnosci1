@@ -1,8 +1,14 @@
 public class LogIn {
 
 	public void login() {
-		// TODO - implement LogIn.login
-		throw new UnsupportedOperationException();
+		/// POBIERANIE DANYCH
+		String login="admin";
+		String password="adminpass";
+		///
+
+		Fasada fasada=new Fasada();
+		fasada.loginAttempt(login,password);
+
 	}
 
 }

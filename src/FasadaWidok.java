@@ -10,8 +10,12 @@ public class FasadaWidok implements Wprowadzanie_danych {
 	}
 
 	public void start() {
-		// TODO - implement FasadaWidok.start
-		throw new UnsupportedOperationException();
+
+		LogIn log= new LogIn();
+		log.login();
+		Menu menu=new Menu();
+		
+
 	}
 
 }
